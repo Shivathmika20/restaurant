@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Table Modal</title>
+    <link rel="stylesheet" href="/assets/css/reservaton.css">
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
+</head>
+<body>
+    <div class="background" >
+        
+        
+            <div class="modal-content">
+               
+                <h2>Book Your Table</h2>
+                <form action="" class="footer-form">
+
+                    <div class="input-wrapper">
+                        <label for="">Enter Name:</label>
+                      <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name"
+                        class="input-field">
+                        <label for="">Enter Email:</label>
+                      <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
+                        class="input-field">
+          
+                    </div>
+          
+                    <div class="input-wrapper">
+                        <label for="">Select persons:</label>
+                      <select name="total_person" aria-label="Total person" class="input-field">
+                      
+                        <option value="person">Person</option>
+                        <option value="2 person">2 Person</option>
+                        <option value="3 person">3 Person</option>
+                        <option value="4 person">4 Person</option>
+                        <option value="5 person">5 Person</option>
+                      </select>
+                      <label for="">Select Date:</label>
+                      <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
+          
+                    </div>
+          
+                    <textarea name="message" required placeholder="Message" aria-label="Message" class="input-field"></textarea>
+          
+                    <button type="submit" class="btn">Book a Table</button>
+          
+                  </form>
+          
+            </div>
+        
+    </div>
+    <script src="/assets/js/reservation.js"></script>
+</body>
+</html>
